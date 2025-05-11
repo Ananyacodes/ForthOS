@@ -59,7 +59,6 @@ export function CLIComponent({ history, onCommand }: CLIComponentProps) {
             onChange={(e) => setInputValue(e.target.value)}
             className="flex-1 bg-transparent border-none focus:ring-0 focus-visible:ring-offset-0 focus-visible:ring-0 p-0 h-auto text-base blinking-cursor"
             placeholder=""
-            autoFocus
             spellCheck="false"
             autoComplete="off"
           />
