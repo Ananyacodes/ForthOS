@@ -12,7 +12,7 @@ const Input = React.forwardRef<HTMLInputElement, React.ComponentProps<"input">>(
           className
         )}
         ref={ref}
-        suppressHydrationWarning={true}
+        suppressHydrationWarning={true} // Retained as it might be useful for other dynamic props
         {...props}
       />
     )

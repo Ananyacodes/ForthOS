@@ -1,3 +1,4 @@
+
 "use client";
 
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -19,7 +20,7 @@ export function KernelLogComponent({ logs }: KernelLogProps) {
           {logs.length === 0 && <p className="text-muted-foreground text-sm">No kernel messages yet.</p>}
           {logs.map((log) => (
             <div key={log.id} className="text-sm mb-1 whitespace-pre-wrap break-words">
-              <span className="text-muted-foreground mr-2">[{log.timestamp}]</span>
+              <span className="text-muted-foreground mr-2">[{new Date(log.timestamp).toLocaleTimeString()}]</span>
               <span className="text-foreground/90">{log.message}</span>
             </div>
           ))}
